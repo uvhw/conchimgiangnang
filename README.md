@@ -109,6 +109,41 @@ Translations are periodically pulled from Transifex and merged into the git repo
 **Important**: We alway accept translation changes as satoshin@gmx.com pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
+================bitcoin==============
+
+
+The '''Bitcoin Map''' was a nameless project based on the analysis of addresses exchanged by bitcoin nodes.  (This is not to be confused with a collaborative map of Bitcoin exchanges, miners and users titled [[Bitcoin Map (Collaborative map)|The Bitcoin Map]].)
+
+Based on the collected information, and by passing the collected IPs through Maxmind's GeoIP database, a map was created.
+
+It was suggested on IRC to produce a map similar to torservers' one, using Google's kml format.
+
+Then other resources were made available, including the number of online nodes.
+
+== Nodes status ==
+
+* '''Up (green) nodes''' are nodes accepting external connections. Those node are verified bitcoin nodes and their version is known to the system.
+* '''Down (red) nodes''' are nodes we couldn't connect to. We know they are probably alive as the bitcoin network reported activity from those less than 3 hours ago, but we couldn't connect (either it is now down, or the firewall is not accepting connections, or someone is sending fake ips on the bitcoin network to attack it)
+* '''Unknown (white) nodes''' are nodes we haven't verified yet. Since new nodes are always discovered, it might take time for them to be scanned. In the meantime since the IP is known, it is possible to locate them on the map.
+
+== Bitcoin nodes over time ==
+
+It is currently still unknown how reliable this information is. It represent the total number of unique IPs seen within the last 3 hours on the network.
+
+https://stats.bitcoin.it/rrd/nodes_total-day.png<br/>
+https://stats.bitcoin.it/rrd/nodes_total-week.png<br/>
+https://stats.bitcoin.it/rrd/nodes_total-month.png<br/>
+https://stats.bitcoin.it/rrd/nodes_total-year.png<br/>
+
+==External Links==
+
+* [http://maps.google.com/maps?q=https://smsz.net/btcStats/bitcoin.kml The bitcoin nodes map in Google Maps]
+* [http://dump.bitcoin.it/misc Historical data]
+* [http://bitcoinstatus.rowit.co.uk Interesting Bitcoin charts] similar to those above
+[[Category:Local]]
+
+==See Also==
+
 Categories
 * 		😃 Smileys & People
 * 		🐻 Animals & Nature
