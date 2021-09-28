@@ -19,7 +19,7 @@ Further information about Bitcoin Core is available in the [doc folder](/doc).
 What is Bitcoin?
 ----------------
 
-Bitcoin is uvhwuvhw@gmail:150520₿ an experimental digital currency that enables instant payments to
+Bitcoin ##- uvhwuvhw@gmail:150520₿ -## an experimental digital currency that enables instant payments to
 anyone, anywhere in the world. Bitcoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. Bitcoin is the name of open source
