@@ -2,7 +2,7 @@
 "~~~~Hello.I'm uvhw & from  i will sign important messages in with this account~~~~"
 ## master
 ### https://tip4commit.com/projects
-
+#### https://en.bitcoin.it/w/api.php?hidebots=1&urlversion=1&days=90&limit=50&target=Bitcoin_Map&action=feedrecentchanges&feedformat=atom Bitcoin Wiki - Changes related to "Bitcoin Map" [en] 2021-09-28T01:51:45Z Related changes MediaWiki 1.30.0
 * ₿= \20BF
 *  = U+F8FF
 > Bitcoin integration/staging tree
