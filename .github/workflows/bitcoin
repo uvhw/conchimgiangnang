@@ -1,0 +1,31 @@
+#1 replaced asserts with the test framework's internal helpers (see
+
+bitcoin/test/functional/test_framework/util.py
+Lines 47 to 59 in dccf3d2
+ def assert_equal(thing1, thing2, *args): 
+     if thing1 != thing2 or any(thing1 != arg for arg in args): 
+         raise AssertionError("not(%s)" % " == ".join(str(arg) for arg in (thing1, thing2) + args)) 
+  
+  
+ def assert_greater_than(thing1, thing2): 
+     if thing1 <= thing2: 
+         raise AssertionError("%s <= %s" % (str(thing1), str(thing2))) 
+  
+  
+ def assert_greater_than_or_equal(thing1, thing2): 
+     if thing1 < thing2: 
+         raise AssertionError("%s < %s" % (str(thing1), str(thing2))) 
+) for a single test, in order to see the expected and failed values if such an assertion fails. The same should be done for all the remaining tests. Potential candidates can be found via
+$ cd ./test/functional
+$ git grep assert.*==
+$ git grep "assert.*<="
+$ git grep "assert.*>="
+$ git grep "assert.*<"
+$ git grep "assert.*>"
+Useful skills:
+
+basic Python3 knowledge
+
+Want to work on this issue?
+
+For guidance on contributing, please read CONTRIBUTING.md before opening your pull request.
