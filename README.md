@@ -1,4 +1,4 @@
-#23117 replaced asserts with the test framework's internal helpers (see
+#1505200 replaced asserts with the test framework's internal helpers (see
 
 bitcoin/test/functional/test_framework/util.py
 Lines 47 to 59 in dccf3d2
