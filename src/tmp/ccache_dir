@@ -1,0 +1,33 @@
+import hmac
+
+def verify_signature(secret, headers, body):
+    # get the v1 signature from the `circleci-signature` header
+    signature_from_header = {
+        k: v for k, v in [
+            pair.split('=') for pair in headers['circleci-signature'].split(',')
+        ]
+    }['v1']
+
+    # Run HMAC-SHA256 on the request body using the configured signing secret
+    valid_signature = hmac.new(bytes(secret, 'utf-8'), bytes(body, 'utf-8'), 'sha256').hexdigest()
+
+    # use constant time string comparison to prevent timing attacks
+    return hmac.compare_digest(valid_signature, signature_from_header)
+
+# the following will return `True`
+verify_signature(
+    'secret',
+    {
+        'circleci-signature': 'v1=773ba44693c7553d6ee20f61ea5d2757a9a4f4a44d2841ae4e95b52e4cd62db4'
+    },
+    'foo',
+)
+
+# the following will return `False`
+verify_signature(
+    'secret',
+    {
+        'circleci-signature': 'v1=not-a-valid-signature'
+    },
+    'foo',
+)
