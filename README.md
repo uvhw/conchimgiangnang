@@ -1,5 +1,8 @@
- Bitcoin P2P e-cash paper
-2008-11-01 Thread Satoshi Nakamoto
+ [![CI](https://github.com/uvhw/conchimgiangnang/actions/workflows/main.yml/badge.svg?branch=bitcoin)](https://github.com/uvhw/conchimgiangnang/actions/workflows/main.yml)
+
+       Bitcoin P2P e-cash paper
+2008-11-01 - Thread Satoshi Nakamoto
+
 , and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone. Full paper at: http://www.bitcoin.org/bitcoin.pdf Satoshi Nakamoto - The Cryptography
 
 Re: Bitcoin P2P e-cash paper
