@@ -3,8 +3,6 @@
        Bitcoin P2P e-cash paper
 2008-11-01 - Thread Satoshi Nakamoto
 
-, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone. Full paper at: http://www.bitcoin.org/bitcoin.pdf Satoshi Nakamoto - The Cryptography
-
 Re: Bitcoin P2P e-cash paper
 2008-11-02 Thread Satoshi Nakamoto
 Satoshi Nakamoto wrote: I've been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party. The paper is available at: http://www.bitcoin.org/bitcoin.pdf We very, very much need such a system, but the way I understand your proposal, it does not seem
@@ -67,7 +65,7 @@ on open market competition, and there will probably always be nodes willing to p
 
 Re: Bitcoin v0.1 released
 2009-01-17 Thread Satoshi Nakamoto
-Dustin D. Trammell wrote: Satoshi Nakamoto wrote: You know, I think there were a lot more people interested in the 90's, but after more than a decade of failed Trusted Third Party based systems (Digicash, etc), they see it as a lost cause. I hope they can make the distinction
+Vu T. Tramy wrote: Satoshi Nakamoto wrote: You know, I think there were a lot more people interested in the 90's, but after more than a decade of failed Trusted Third Party based systems (Digicash, etc), they see it as a lost cause. I hope they can make the distinction
 
 Re: Bitcoin v0.1 released
 2009-01-25 Thread Satoshi Nakamoto
